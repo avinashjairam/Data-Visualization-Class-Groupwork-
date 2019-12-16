@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> Walking Dead!</title> 
+	<script src= "https://code.jquery.com/jquery-1.12.4.min.js"> 	</script> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<style type="text/css"> 
+		.selectt { 
+			color: #fff; 
+			padding: 30px; 
+			display: none; 
+			margin-top: 30px; 
+			width: 60%; 
+			
+		} 
+		
+		label { 
+			margin-right: 20px; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<center> 
+		<h1 style="color:green;"> 
+		THE WALKING DEAD! 
+		</h1> 
+		<h3> 
+		Check out how wind, temperature, precipation, and humidity affect the daily walking patterns of 4 adult men in NYC over the period of 1 year.
+		</h3> 
+		<div> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="temp">Temperature</label> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="wind">Wind</label> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="precipitation">Precipitation</label> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="Java">Humidty</label> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="pca">PCA</label>
+
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="parallel">Parallel Coordinates</label>
+
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="scatter">Scatter Matrix</label>
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="correlation">Correlation Matrix</label>
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="summary">Activity Levels Summary</label>
+
+
+		</div> 
+		<div class="temp selectt "> 
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#jairam">View Scatter Plot of Distance Walked vs Temperature</button><br><br>
+			  <div id="jairam" class="collapse out">
+			    <iframe src="jairam.html" height="800" width="800"></iframe>
+			  </div>
+			
+	    </div> 
+
+		<div class="wind selectt"> 
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#viet">View Scatter Plot of Distance Walked vs Wind Speed</button><br><br>
+			  <div id="viet" class="collapse out">
+			  				<iframe src="viet.html" height="800" width="1000"></iframe>
+			  </div>
+
+			 <br><br>
+			 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#viet2">View Bar Chart of Distance Walked vs Wind Speed</button><br><br>
+			  <div id="viet2" class="collapse out">
+			  				<iframe src="viet_barwind.html" height="800" width="1000"></iframe>
+			  </div>
+
+
+
+	    </div> 
+
+
+		<div class="precipitation selectt">
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#juhan">View Scatter Plot of Distance Walked vs Precipitation</button><br><br>
+			  <div id="juhan" class="collapse out">
+			  				<iframe src="juhan.html" height="800" width="1000"></iframe>
+			  </div>
+
+
+
+
+	    </div> 
+
+
+		<div class="Java selectt"> 
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#daniel1">View Bar Chart of Averaged Walked distance vs Humidity Hours</button><br><br>
+			  <div id="daniel1" class="collapse out">
+			  				<iframe src="daniel.html" height="650" width="1000"></iframe>
+			  </div>
+
+			 <br><br>
+			 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#daniel2">View Scatter plot of walked distance vs Humidity Hours
+</button><br><br>
+			  <div id="daniel2" class="collapse out">
+			  				<iframe src="daniel2.html" height="650" width="1000"></iframe>
+			  </div>
+
+
+
+
+
+	    </div> 
+
+	    <div class="pca selectt"> 
+	    	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#pca">View PCA
+	     	</button><br><br>
+
+	      <div id="pca" class="collapse out">
+
+		    <iframe src="pca.html" height="1000" width="1000"></iframe>
+		   </div>
+	    </div> 
+
+	      <div style="margin-left:-500px" class="parallel selectt"> 
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#parallel">View Parallel Coordinates
+	     	</button><br><br>
+
+			  <div id="parallel" class="collapse out">
+				 <object data="parallel.html" type="text/html"  style="width:200%;height:3000px;">
+				   </object>
+				</div>
+	    </div> 
+
+	     <div class="scatter selectt"> 
+	     	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#scatter">View Scatter Matrix
+	     	</button><br><br>
+			  <div id="scatter" class="collapse out">			  				
+			<iframe src="https://avinashjairam.com/Sketch_matrix/scatter_weather.html" height="1000" width="1000"></iframe>
+		</div>
+
+
+
+	    </div>
+
+
+	     <div class="correlation selectt"> 
+	     	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#correlation">View Correlation Matrix
+	     	</button><br><br>
+			  <div id="correlation" class="collapse out">			  				
+			<iframe src="juhan_cormat.html" height="1000" width="1000"></iframe>
+		</div>		
+	    </div>
+
+
+	     <div style="margin-left:-500px" class="summary selectt"> 
+	     	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#summary">View Summary of Activity Levels
+	     	</button><br><br>
+			  <div  id="summary" class="collapse out">			  				
+			<iframe src="summary.html" height="700" width="200%"></iframe>
+		</div>
+
+
+		
+	    </div>
+
+
+		<script type="text/javascript"> 
+			$(document).ready(function() { 
+				$('input[type="radio"]').click(function() { 
+					var inputValue = $(this).attr("value"); 
+					var targetBox = $("." + inputValue); 
+					$(".selectt").not(targetBox).hide(); 
+					$(targetBox).show(); 
+				}); 
+			}); 
+		</script> 
+	</center> 
+</body> 
+
+</html> 

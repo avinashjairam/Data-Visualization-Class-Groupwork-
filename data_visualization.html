@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+	Walking Dead!
+
+	</title> 
+	<script src= 
+"https://code.jquery.com/jquery-1.12.4.min.js"> 
+	</script> 
+	<style type="text/css"> 
+		.selectt { 
+			color: #fff; 
+			padding: 30px; 
+			display: none; 
+			margin-top: 30px; 
+			width: 60%; 
+			
+		} 
+		
+		label { 
+			margin-right: 20px; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<center> 
+		<h1 style="color:green;"> 
+		THE WALKING DEAD! 
+		</h1> 
+		<h3> 
+		Check out how wind, temperature, precipation, and humidity affect the daily walking patterns of 4 adult men in NYC over the period of 1 year.
+		</h3> 
+		<div> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="C">Temperature</label> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="Cplus">Wind</label> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="Python">Precipation</label> 
+			<label> 
+				<input type="radio" name="colorRadio"
+					value="Java">Humidty</label> 
+		</div> 
+		<div class="C selectt "> 
+			<iframe src="jairam.html" height="1000" width="1000"></iframe>
+
+	    </div> 
+
+		<div class="Cplus selectt"> 
+			<iframe src="viet.html" height="1000" width="1000"></iframe>
+	    </div> 
+
+
+		<div class="Python selectt"> 
+		    <iframe src="juhan.html" height="1000" width="1000"></iframe>
+
+	    </div> 
+
+
+		<div class="Java selectt"> 
+	
+
+	    </div> 
+
+
+		<script type="text/javascript"> 
+			$(document).ready(function() { 
+				$('input[type="radio"]').click(function() { 
+					var inputValue = $(this).attr("value"); 
+					var targetBox = $("." + inputValue); 
+					$(".selectt").not(targetBox).hide(); 
+					$(targetBox).show(); 
+				}); 
+			}); 
+		</script> 
+	</center> 
+</body> 
+
+</html> 
